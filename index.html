@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Festival Kuliner Bali - tiga hari kuliner khas Pulau Dewata.">
+    <title>Festival Kuliner Bali</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header & Navbar (Flexbox, sticky) -->
+    <header class="header">
+        <div class="logo">
+            <img src="pngtree-culiner-logo-illustration-png-image_6005675.png" alt="Logo Festival Kuliner Bali">
+            <h1>Festival Kuliner Bali</h1>
+        </div>
+        <nav class="navbar">
+            <a href="#home">Beranda</a>
+            <a href="#jadwal">Jadwal</a>
+            <a href="#tenant">Tenant</a>
+            <a href="#daftar">Daftar</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section id="home" class="section hero">
+            <div class="hero-content">
+                <h2>Festival Kuliner Bali</h2>
+                <p>Jelajahi cita rasa Pulau Dewata: babi guling, lawar, sate lilit, hingga jajanan pasar tradisional. Tiga hari penuh rasa, musik, dan budaya.</p>
+                <a href="#daftar" class="btn">Daftar Jadi Tenant</a>
+            </div>
+        </section>
+
+        <!-- Jadwal -->
+        <section id="jadwal" class="section">
+            <h2>Jadwal Acara</h2>
+            <div class="table-wrap">
+                <table>
+                    <caption>Rangkaian acara Festival Kuliner Bali (3 hari)</caption>
+                    <thead>
+                        <tr>
+                            <th>Hari</th>
+                            <th>Waktu</th>
+                            <th>Acara</th>
+                            <th>Lokasi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">Jumat, 4 Des</td>
+                            <td>10.00 – 11.00</td>
+                            <td>Pembukaan &amp; Kesenian Bali</td>
+                            <td>Panggung Utama</td>
+                        </tr>
+                        <tr>
+                            <td>11.00 – 15.00</td>
+                            <td>Bazar Kuliner Tradisional</td>
+                            <td>Area Tenant</td>
+                        </tr>
+                        <tr>
+                            <td>19.00 – 21.00</td>
+                            <td>Live Music</td>
+                            <td>Panggung Utama</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">Sabtu, 5 Des</td>
+                            <td>10.00 – 12.00</td>
+                            <td>Lomba Memasak Nasi Campur</td>
+                            <td>Dapur Terbuka</td>
+                        </tr>
+                        <tr>
+                            <td>13.00 – 21.00</td>
+                            <td>Bazar &amp; Live Music</td>
+                            <td>Panggung Utama</td>
+                        </tr>
+                        <tr>
+                            <td>Minggu, 6 Des</td>
+                            <td colspan="3">Bazar sepanjang hari, pengumuman pemenang lomba, dan penutupan pukul 20.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Galeri Tenant (CSS Grid) -->
+        <section id="tenant" class="section alt">
+            <h2>Galeri Tenant</h2>
+            <div class="gallery">
+                <figure>
+    <img src="dewa-yoga.-babi-guling.jpeg">
+    <figcaption>
+        <h3>Babi Guling</h3>
+        <p>Babi Guling Khas Bali.</p>
+        <span class="harga">Mulai Rp 20.000</span>
+    </figcaption>
+    </figure>
+
+    <figure>
+    <img src="sate celeng.png">
+    <figcaption>
+        <h3>Sate Lilit</h3>
+        <p>Sate Lilit Usus Celeng</p>
+        <span class="harga">Mulai Rp 15.000</span>
+    </figcaption>
+    </figure>
+
+    <figure>
+    <img src="jajan tradisional.png">
+    <figcaption>
+        <h3>Jajanan Tradisional</h3>
+        <p>jajanan tradinional khas lokal</p>
+        <span class="harga">Mulai Rp 10.000</span>
+    </figcaption>
+    </figure>
+
+    <figure>
+    <img src="lawar-bali-02.jpeg">
+    <figcaption>
+        <h3>Lawar Celeng</h3>
+        <p>Lawar Celeng khas bu sri.</p>
+        <span class="harga">Mulai Rp 9.000</span>
+    </figcaption>
+    </figure>
+
+        <figure>
+    <img src="37046593_936335109900350_1974268097988657152_n.jpg">
+    <figcaption>
+        <h3>Es Cendol</h3>
+        <p>Es khas nusantara</p>
+        <span class="harga">Mulai Rp 4.000</span>
+    </figcaption>
+    </figure>
+            </div>
+        </section>
+
+        <!-- Form Pendaftaran -->
+        <section id="daftar" class="section">
+            <h2>Pendaftaran Tenant</h2>
+            <form action="#" method="post" class="form">
+                <div class="field">
+                    <label for="usaha">Nama Usaha</label>
+                    <input type="text" id="usaha" name="usaha" placeholder="Contoh: Warung Bu Oka" required>
+                </div>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+                </div>
+                <div class="field">
+                    <label for="hp">No. HP</label>
+                    <input type="tel" id="hp" name="hp" pattern="[0-9]{10,13}" title="Masukkan 10 sampai 13 digit angka" placeholder="081234567890" required>
+                </div>
+                <div class="field">
+                    <label for="kategori">Kategori</label>
+                    <select id="kategori" name="kategori" required>
+                        <option value="">-- Pilih kategori --</option>
+                        <option value="makanan">Makanan Berat</option>
+                        <option value="minuman">Minuman</option>
+                        <option value="jajanan">Jajanan / Camilan</option>
+                        <option value="oleh-oleh">Oleh-oleh</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">Kirim Pendaftaran</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>📍 Peguyangan, Denpasar | 📞 +62 812-3456-7890</p>
+        <p>&copy; 2026 Festival Kuliner Bali | UTS Pengembangan Sistem Sisi Klien</p>
+    </footer>
+</body>
+</html>
